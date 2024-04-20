@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet-HUB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin : 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+            background-color: lightslategray;
+            color: white;
+        }
+        body{
+            font-family: "Barlow", sans-serif;
+        }
+        header{
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+        ul{
+            display: flex;
+        }
+        ul li a{
+            margin : 0 5px;
+            border: 0.5px solid white;
+            padding: 0px 10px ;
+            border-radius: 50px;
+        }
+        .signup {
+            background-color: lightskyblue;
+            color: black;
+            font-style: italic;
+        }
+        .signup :hover{
+            background-color: black;
+            color:white;
+        }
+        main{
+            display: flex;
+            height: 90vh;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0px 150px;
+        }
+        .leftcontent{
+                flex : 1
+        }
+        .midcontent{
+                flex : 2
+        }
+        .rightcontent{
+                flex : 1
+        }
+        .mercuryimg{
+            max-width: 300px;
+            height: auto;
+        }
+        .btn {
+            background-color: lightgreen;
+            border: 1px solid whitesmoke;
+            color: black;
+            border-radius: 50px;
+            padding: 12px 24px;
+            margin : 20px;
+        }
+        main h2{
+            font-size: 50px;
+            line-height: 500px;
+            margin : 30px 0px;
+            text-transform: uppercase;
+        }
+        .btn:hover{
+            background-color: aqua;
+            border-color: red;
+        }
+        main p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>   
+        <div class="logo">  <img class="h-16 w-16" src="/img/logo.png"> </div>
+        <nav>
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Offer</a> </li>
+                <li> <a href="#">Sell</a> </li>
+                <li> <a href="#">Buy</a> </li>
+                <li> <a href="#">About Us</a> </li>
+                
+                <li> <a href="#" class="signup">Sign Up</a> </li>
+            </ul>
+        </nav>    
+    </header>
+    <main>
+
+        <div class="leftcontent"> 
+            <h2> Mercury </h2>
+
+        </div>
+       <div class="midcontent"> 
+        <p> Mercury is the first planet from the Sun and the smallest in the Solar System. In English, it is named after the Roman god Mercurius (Mercury), god of commerce and communication, and the messenger of the gods.
+         Mercury is classified as a terrestrial planet, wif roughly the same surface gravity as Mars.</p>
+       <button class="btn">Buy Now </button>
+        </div>  
+        <div class="rightcontent"> 
+            <img src="/img/Mercury-planet-facts.png" class="mercuryimg">
+        </div>
+
+    </main>
+</body>
+</html>
